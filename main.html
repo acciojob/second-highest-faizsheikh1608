@@ -20,6 +20,8 @@
 				if(i > largest){
 					second_largest = largest
 					largest = i
+				}else if(i > second_largest){
+					second_largest = i
 				}
 			}
 			if(largest === second_largest){
@@ -30,12 +32,12 @@
 		}
 
 		function Main() {
-			var n = prompt("Enter the number of elements");
+			//var n = prompt("Enter the number of elements");
 			var arr = [];
 			for (var i = 0; i < n; i++) {
 				arr[i] = prompt("Enter element " + (i+1));
 			}
-			alert(secondHighest(arr));
+			//alert(secondHighest(arr));
 		}
 		Main();
 	</script>
